@@ -40,7 +40,6 @@
         $(document).ready(function(){
           var endpoint = "https://data.cityofchicago.org/resource/xzkq-xp2w.json?$select=department,count(department)&$group=department";
 
-          //populate list-group
           $.get(endpoint, function(response){
               console.log(response);
               var info = response;
